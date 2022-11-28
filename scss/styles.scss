@@ -1,0 +1,158 @@
+body {
+    background-color: #F4F4F4;
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: #11aef7;
+    color: white;
+    display: flex;
+    height: 5em;
+    font-size: 1em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.interface {
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    max-height: 520px;
+    padding: 30px;
+    margin: 30px auto;
+    height: 445px;
+    box-shadow: #e6e6e6 1px 2px 3px 5px;
+
+    .interface__forms {
+        width: 100%;
+    }
+    
+    .interface__image__1 {
+        width: 30%;
+    }
+
+    .interface__images {
+        display: flex;
+        justify-content: end;
+        padding-left: 100%;
+    }
+
+    .interface__images__1 {
+        width: 20px;
+    }
+
+    .interface__forms__email, .interface__forms__password {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        font-size: medium;
+        border-color: #F4F4F4;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .interface__forms__email:focus, .interface__forms__password:focus {
+        outline: none;
+        border: 1px solid gray;
+        border-radius: 3px;
+    }
+
+    .interface__form {
+        width: 100%;
+    }
+    .interface__title {
+        font-weight: bold;
+        color: rgb(36, 36, 36);
+        padding-bottom: 35px;
+    }
+
+    .interface__form__signin {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    .interface__form__checkbox {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .interface__createaccbtn {
+        display: flex;
+        padding-top: 20px;
+        background-color: #FFFFFF;
+        border-color: #FFFFFF;
+        border: none;
+    }
+
+    .interface__createaccbtn:hover {
+        color: #11aef7;
+    }
+
+    .interface__signinbtn {
+        color: white;
+        background-color: #11aef7;
+        border-color: #11aef7;
+        border-radius: 3px;
+        border: none;
+        padding: 10px 25px;
+    }
+
+    .interface__signinbtn:hover {
+        background-color: #0e93d1;
+        border-color: #0e93d1;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    
+    .interface__images {
+        display: flex;
+        justify-content: end;
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    header {
+        font-size: x-small;
+    }
+
+    .interface {
+        width: 80%;
+    }
+
+    .interface__title {
+        font-size: small;
+    }
+
+    .interface__images__1 {
+        width: 90%;
+    }
+
+    .interface__form {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        font-size: xx-small;
+    }
+
+    .interface__form {
+        width: 90%;
+    }
+}
